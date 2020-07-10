@@ -34,13 +34,22 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
 
+    Semantic HTML is mark up language that contains meaning in addition to describing abstract structural elements of a page. A header functions much the same way as a div, but the header tells both the browser/device, and the person looking at the code that this code is at the head of the document being rendered.
+
 2. Name two big differences between ```display: block;``` and ```display: inline;```.
 
-3. What are the 4 areas of the box model?
+    Display block takes up the entire width of a page. It cannot be shown next to another element. An inline element can fit seamlessly next to other inline elements.
+    A block element will create a new line with a linebreak.
 
+3. What are the 4 areas of the box model?
+    Content, padding, border, margin.
 4. While using flexbox, what axis does the following property work on: ```align-items: center```?
 
+    I believe you are looking for the cross-axis? But it's really a matter of perspective, the items are moved along the cross-axis, but the main-axis is being used as the referent to make the translation. "Worked on" is too vague for me to know what you mean, sorry to be that guy.
+
 5. Explain why git is valuable to a team of developers.
+
+    Git has many features useful to teams of developers. Changes are tracked and backed up, allowing reversion of the codebase. Branching is an easy way to distribute work to members of a team, and then the pull requests at the end will allow review to check for conflicts.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

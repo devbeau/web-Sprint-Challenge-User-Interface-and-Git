@@ -47,9 +47,9 @@ table {
 	border-spacing: 0;
 }
 
-/* {
+* {
     box-sizing: border-box;
-}*/
+}
 
 html, body {
     height: 100%;
@@ -124,12 +124,13 @@ p {
     justify-content: space-evenly;
 }
 
+/* Flex styling for the image properties that are in the middle of the page*/
 .main-wrapper{
     display: flex;
     flex-flow: row wrap;
     justify-content:space-evenly;
 }
-
+/* Styles the boxes around image and text as a column for layout */
 .content-box{
     display: flex;
     flex-direction: column;
@@ -145,6 +146,7 @@ p {
 .content-box .img-container img{
     width:100%;
 }
+/* Styles and layout for the text and link elements in the content-boxes using flex */
 .content-box .content-txt{
     display: flex;
     flex-direction: column;
