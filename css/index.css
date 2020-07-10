@@ -88,10 +88,15 @@ p {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    width:125px;
+    text-align:center;
 }
 
 #top-nav a:hover{
+    position:static;
+    transition: 0.35s;
     color: rgb(148, 19, 19);
+    font-size: 1.2em;
 }
 
 #top-img{
@@ -119,6 +124,10 @@ p {
     padding-bottom: 20px;
 }
 
+.top-content h2{
+    font-size:1.4em;
+    font-weight: 600;
+}
 /* Middle Section Styling */
 
 .middle-content {
