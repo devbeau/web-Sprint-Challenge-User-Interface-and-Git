@@ -185,7 +185,8 @@ p {
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin:  2% 20px;
+    margin-bottom: 4%;
     justify-content: space-around;
 }
 
@@ -222,18 +223,34 @@ footer nav {
     width: 60%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
+    /*align-items: center;*/
+    flex-shrink:0;
     font-size: 14px;
 }
 
 footer nav a {
+    width: 125px;
+    padding: 20px;
+    margin-left:7px;
     color: white;
     text-decoration: none;
+    text-align: center;
+    font-weight: 350;
 }
 
 footer nav a:hover{
-    color: rgb(148, 19, 19);
+    position: static;
+    transition: 0.35s;
+    transform: translateY(-5px);
+    background:  #bb1333;
+    border: 1px solid white;
+    border-top: 0;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
 }
 
 /**********************/
@@ -259,10 +276,11 @@ footer nav a:hover{
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
-    border-bottom: 1px dashed black;
-    min-width:280px;
-    max-width:380px;
+    flex-shrink: 8;
+    min-width:100px;
+    max-width:320px;
     margin: 1% 0;
+    padding: 0.5%;
 }
 
 .content-box .img-container{
@@ -280,9 +298,11 @@ footer nav a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    border-bottom: 1px dashed black;
 }
 
 .content-txt h2{
+    margin-top: 1%;
     font-weight: bold;
 }
 
@@ -298,7 +318,14 @@ footer nav a:hover{
     text-decoration: none;
     font-weight: 600;
     color: black;
-}   
+    letter-spacing: 1px;
+    
+}
+.content-txt a:hover{
+    transition: 0.5s;
+    background-color: #bb1333;
+    color: white;
+}
 
 .bottom-wrapper h2{
     margin: 2.5% 0;
