@@ -88,6 +88,10 @@ p {
     font-weight: bold;
 }
 
+#top-nav a:hover{
+    color: rgb(148, 19, 19);
+}
+
 #top-img{
     margin-bottom:2%;
 }
@@ -222,6 +226,10 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+footer nav a:hover{
+    color: rgb(148, 19, 19);
 }
 
 /**********************/
