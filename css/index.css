@@ -251,6 +251,7 @@ footer nav a:hover{
     position: static;
     transition: 0.35s;
     transform: translateY(-5px);
+    padding: 18px;
     background:  #bb1333;
     border: 1px solid white;
     border-top: 0;
@@ -277,6 +278,8 @@ footer nav a:hover{
     justify-content:space-evenly;
     width:100%;
 }
+
+
 
 /* Styles the boxes around image and text as a column for layout */
 
