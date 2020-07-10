@@ -67,8 +67,10 @@ p {
 }
 
 .container {
-    width: 800px;
+    width: 60%;
     margin: 0 auto;
+    min-width: 800px;
+    max-width: 1200px;
 }
 
 /* Header styling */
@@ -93,6 +95,7 @@ p {
 }
 
 #top-img{
+    width:100%;
     margin-bottom:2%;
 }
 
@@ -132,12 +135,13 @@ p {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    width: 100%;
 }
 
 /* This worked better than using the .boxes class */
 .box-one, .box-two, .box-three, .box-four, .box-five, .box-six, .box-seven
 , .box-eight, .box-nine, .box-ten {
-    width: 12.5%;
+    width: 100px;
     height: 100px;
     background: black;
     margin: 20px 2.5%;
@@ -245,6 +249,7 @@ footer nav a:hover{
     display: flex;
     flex-flow: row wrap;
     justify-content:space-evenly;
+    width:100%;
 }
 
 /* Styles the boxes around image and text as a column for layout */
@@ -255,7 +260,8 @@ footer nav a:hover{
     align-items: flex-start;
     justify-content: flex-end;
     border-bottom: 1px dashed black;
-    width:48%;
+    min-width:280px;
+    max-width:380px;
     margin: 1% 0;
 }
 
