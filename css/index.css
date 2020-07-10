@@ -229,36 +229,43 @@ footer {
 }
 
 footer nav {
-    width: 60%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
-    /*align-items: center;*/
+    align-items: stretch;
     flex-shrink:0;
     font-size: 14px;
+    background: black;
 }
 
 footer nav a {
-    width: 125px;
-    padding: 20px;
-    margin-left:7px;
+    width: 200px;
+    padding: 20px 20px 20px 20px;
+   
+    border:1px solid transparent;
     color: white;
+    background:black;
     text-decoration: none;
     text-align: center;
     font-weight: 350;
 }
 
+footer nav a{
+    justify-self: flex-end;
+}
+
 footer nav a:hover{
     position: static;
     transition: 0.35s;
-    transform: translateY(-5px);
-    padding: 18px;
-    background:  #bb1333;
-    border: 1px solid white;
+    transform: translateY(-13px);
+    border-radius:16px 16px 0 0;
+    
+    padding: 18px 19px 18px 19px;
+    background:  black;
+    border: 1px solid transparent;
     border-top: 0;
-    border-bottom: 1px solid white;
-    color: white;
-    font-size: 1.2em;
-    font-weight: bold;
+    color: #bb1333;
+    font-weight: bolder;
     letter-spacing: 1px;
     text-align: center;
 }
