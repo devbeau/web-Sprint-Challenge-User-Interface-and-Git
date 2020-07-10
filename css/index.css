@@ -71,6 +71,8 @@ p {
     margin: 0 auto;
 }
 
+/* Header styling */
+
 #top-nav{
     display:flex;
     justify-content: space-between;
@@ -85,6 +87,7 @@ p {
     color: black;
     font-weight: bold;
 }
+
 #top-img{
     margin-bottom:2%;
 }
@@ -108,6 +111,9 @@ p {
     padding: 0 1%;
     padding-bottom: 20px;
 }
+
+/* Middle Section Styling */
+
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -124,54 +130,7 @@ p {
     justify-content: space-evenly;
 }
 
-/* Flex styling for the image properties that are in the middle of the page*/
-.main-wrapper{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content:space-evenly;
-}
-/* Styles the boxes around image and text as a column for layout */
-.content-box{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
-    border-bottom: 1px dashed black;
-    width:48%;
-    margin: 1% 0;
-}
-.content-box .img-container{
-    width:100%;
-}
-.content-box .img-container img{
-    width:100%;
-}
-/* Styles and layout for the text and link elements in the content-boxes using flex */
-.content-box .content-txt{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.content-txt h2{
-    font-weight: bold;
-}
-
-.content-txt p{
-    margin: 2% 0%;
-}
-.content-txt a{
-    padding: 1%;
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 1% 2%;
-    margin: 4% 0;
-    text-decoration: none;
-    font-weight: 600;
-    color: black;
-}
-
+/* This worked better than using the .boxes class */
 .box-one, .box-two, .box-three, .box-four, .box-five, .box-six, .box-seven
 , .box-eight, .box-nine, .box-ten {
     width: 12.5%;
@@ -184,6 +143,7 @@ p {
     justify-content: center;
 }
 
+/* background colors for index.html boxes */
 .box-one{
     background-color: teal;
 }
@@ -214,6 +174,7 @@ p {
 .box-ten{
     background-color: dodgerblue;
 }
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -228,7 +189,9 @@ p {
     padding-right: 0;
 }
 
+
 /*
+Didn't end up using this but could be refactored
 .boxes{
     display: flex;
     justify-content: row;
@@ -236,13 +199,11 @@ p {
 }
 */
 
-.bottom-wrapper h2{
-margin: 2.5% 0;
-}
 
-.bottom-wrapper p{
-margin-bottom: 2.5%;
-}
+
+/* footer styling */
+
+
 
 footer {
     width: 100%;
@@ -261,4 +222,74 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/**********************/
+/* about.html styling */
+/* ~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~ */
+/**********************/
+
+
+/* Flex styling for the image properties that are in the middle of the page*/
+
+.main-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-evenly;
+}
+
+/* Styles the boxes around image and text as a column for layout */
+
+.content-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    border-bottom: 1px dashed black;
+    width:48%;
+    margin: 1% 0;
+}
+
+.content-box .img-container{
+    width:100%;
+}
+
+.content-box .img-container img{
+    width:100%;
+}
+
+/* Styles and layout for the text and link elements in the content-boxes using flex */
+
+.content-box .content-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.content-txt h2{
+    font-weight: bold;
+}
+
+.content-txt p{
+    margin: 2% 0%;
+}
+.content-txt a{
+    padding: 1%;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 1% 2%;
+    margin: 4% 0;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}   
+
+.bottom-wrapper h2{
+    margin: 2.5% 0;
+}
+    
+.bottom-wrapper p{
+    margin-bottom: 2.5%;
 }
